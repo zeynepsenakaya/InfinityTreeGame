@@ -1,0 +1,125 @@
+body {
+    background-color: #555;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3f7ff;
+    padding: 0;
+    margin: 0;
+}
+
+.control {
+    background-color: #d3f7ff;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-control {
+  width: 120px;
+  height: 120px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #40407a;
+  border: 1rem solid #2c2c54;
+  color: #fff;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.btn-control:active {
+  background-color: #706fd3;
+  border: 1rem solid #474787;
+}
+@font-face {
+    font-family: 'Lovato Light';
+    src: url('fonts/lovato-light.ttf') format('truetype');
+}
+
+.center {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 305px;
+    width: 470px;
+    border-radius: 3px;
+    animation: borderAnimation 3s linear infinite;
+    background-color: rgba(20,20,20,0.5);
+}
+
+@keyframes borderAnimation {
+    0% {
+        border: 3px solid #ff7b00;
+    }
+    50% {
+        border: 3px solid #00bfff;
+    }
+    100% {
+        border: 3px solid #ff7b00;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background: #d3f7ff;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999; 
+}
+
+button {
+    width: 110px;
+    height: 110px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #40407a;
+    border: 1rem solid #2c2c54;
+    color: #fff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    left: 25.5%;
+    font-family: 'Lovato Light', Arial, sans-serif;
+    color: white;
+}
+
+p {
+    margin-top: 0;
+    color: white;
+font-family: 'Lovato Light', Arial, sans-serif;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Lovato Light', Arial, sans-serif;
+}
+
